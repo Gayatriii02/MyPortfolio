@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Gayatri</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#f9ecff,#e6f0ff,#ffe6f2);
+            min-height:100vh;
+            padding:40px 20px;
+            position:relative;
+        }
+
+        body::before,
+        body::after{
+            content:"";
+            position:fixed;
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            filter:blur(80px);
+            z-index:-1;
+        }
+
+        body::before{
+            top:-80px;
+            left:-80px;
+            background:rgba(186,104,255,0.35);
+        }
+
+        body::after{
+            bottom:-80px;
+            right:-80px;
+            background:rgba(255,120,180,0.3);
+        }
+
+        .resume-box{
+            max-width:1000px;
+            margin:auto;
+            display:grid;
+            grid-template-columns:1fr 2fr;
+            background:rgba(255,255,255,0.28);
+            backdrop-filter:blur(18px);
+            border:1px solid rgba(255,255,255,0.35);
+            border-radius:30px;
+            overflow:hidden;
+            box-shadow:0 8px 30px rgba(120,70,180,0.15);
+        }
+
+        .left{
+            background:rgba(255,255,255,0.3);
+            padding:40px 30px;
+            text-align:center;
+        }
+
+        .left img{
+            width:160px;
+            height:160px;
+            border-radius:50%;
+            object-fit:cover;
+            border:4px solid #c86bff;
+            margin-bottom:20px;
+        }
+
+        .left h1{
+            color:#7a3db8;
+            margin-bottom:10px;
+        }
+
+        .left p{
+            color:#5d5367;
+            margin-bottom:8px;
+        }
+
+        .left h3,
+        .right h3{
+            color:#9c4dff;
+            margin:25px 0 15px;
+        }
+
+        .right{
+            padding:40px;
+        }
+
+        .right p,
+        .right li{
+            color:#5d5367;
+            line-height:1.9;
+        }
+
+        .right ul{
+            margin-left:20px;
+        }
+
+        .back{
+            display:inline-block;
+            margin-top:30px;
+            text-decoration:none;
+            padding:12px 24px;
+            border-radius:30px;
+            background:linear-gradient(90deg,#c86bff,#ff8fcf);
+            color:white;
+        }
+
+        @media(max-width:800px){
+            .resume-box{
+                grid-template-columns:1fr;
+            }
+
+            .right{
+                padding:30px 22px;
+            }
+
+            .left{
+                padding:30px 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-box">
+
+        <div class="left">
+            <img src="profile.jpeg" alt="Gayatri">
+
+            <h1>Gayatri</h1>
+            <p>CSE Department - Section A</p>
+
+            <h3>Contact</h3>
+            <p>📧 gayatri@email.com</p>
+            <p>📱 +91 7382071234</p>
+            <p>📍 Andhra Pradesh, India</p>
+
+            <h3>Links</h3>
+            <p>GitHub</p>
+            <p>LinkedIn</p>
+        </div>
+
+        <div class="right">
+
+            <h3>Education</h3>
+            <p>
+                B.Tech in Computer Science Engineering<br>
+                CSE Department - Section A<br>
+                2025 - 2029
+            </p>
+
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Python</li>
+                <li>Basic Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive Web Design</li>
+            </ul>
+
+            <h3>Projects</h3>
+            <ul>
+                <li>Python Mini Project</li>
+                <li>Basic Java Programs</li>
+                <li>Portfolio Website using HTML & CSS</li>
+            </ul>
+
+            <h3>Achievements</h3>
+            <ul>
+                <li>Participated in coding and technical events</li>
+                <li>Built beginner-level programming projects</li>
+                <li>Learning web development and responsive design</li>
+            </ul>
+
+            <a href="index.html" class="back">← Back to Home</a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
