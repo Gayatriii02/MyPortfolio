@@ -15,4 +15,4 @@ This is my personal portfolio website created using HTML and CSS.
 - CSS
 
 ## GitHub Repository
-https://github.com/yourusername/yourrepository
+https://github.com/Gayatriii02/MyPortfolio
